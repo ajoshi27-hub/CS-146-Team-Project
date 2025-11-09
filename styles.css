@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  margin: 20px;
+}
+
+h1 {
+  color: #0b76c5;
+}
+
+ul.navbar {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+ul.navbar li {
+  display: inline;
+  margin-right: 12px;
+}
+
+ul.navbar a {
+  text-decoration: none;
+  color: #0b76c5;
+}
+
+ul.navbar a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+ul {
+  line-height: 1.7;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .navbar li {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .navbar li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+    margin: 40px;
+  }
+  .main {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
