@@ -1,17 +1,32 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: lightblue;
+  background-color: #f3f8ff;
   margin: 20px;
 }
 
+.title-row {
+    display: flex;
+    justify-content: center;   
+    align-items: center;             
+    margin-bottom: 20px;
+}
+
+.title-logo {
+    width: 60px;               
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;       
+}
 h1 {
   color: #0b76c5;
+  text-align: center;
 }
 
 ul.navbar {
   list-style: none;
   padding: 0;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 ul.navbar li {
@@ -41,6 +56,10 @@ ul {
     display: block;
     margin: 8px 0;
   }
+  .title-logo {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -50,6 +69,10 @@ ul {
   .navbar li {
     display: inline-block;
     margin-right: 10px;
+  }
+  .title-logo {
+    width: 50px;
+    height: 50px;
   }
 }
 
