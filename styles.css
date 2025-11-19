@@ -2,21 +2,9 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f3f8ff;
   margin: 20px;
+  text-align: center;
 }
 
-.title-row {
-    display: flex;
-    justify-content: center;   
-    align-items: center;             
-    margin-bottom: 20px;
-}
-
-.title-logo {
-    width: 60px;               
-    height: 60px;
-    object-fit: cover;
-    border-radius: 10px;       
-}
 h1 {
   color: #0b76c5;
   text-align: center;
@@ -30,8 +18,8 @@ ul.navbar {
 }
 
 ul.navbar li {
-  display: inline;
-  margin-right: 12px;
+  display: inline-block;
+  text-align: left;
 }
 
 ul.navbar a {
@@ -46,19 +34,25 @@ ul.navbar a.active {
 
 ul {
   line-height: 1.7;
+  list-style-position: inside;
 }
 
-@media only screen and (max-width: 480px) {
+.order {
+    display: inline-block;
+    text-align: left;
+}
+
+.container {
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
   .navbar li {
     display: block;
     margin: 8px 0;
-  }
-  .title-logo {
-    width: 40px;
-    height: 40px;
   }
 }
 
@@ -69,10 +63,6 @@ ul {
   .navbar li {
     display: inline-block;
     margin-right: 10px;
-  }
-  .title-logo {
-    width: 50px;
-    height: 50px;
   }
 }
 

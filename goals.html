@@ -19,24 +19,47 @@
 
 <h2>Set Your Fitness Goal</h2>
 
-<form>
-    <label>Goal:</label>
-    <select>
-        <option>Maintain</option>
-        <option>Bulk</option>
-        <option>Cut</option>
-    </select>
+<form id="goals-form">
 
-    <br><br>
+    <p>
+        <label for="name">Name:</label><br>
+        <input id="name" type="text" placeholder="Enter your name">
+    </p>
 
-    <label>Activity Level:</label>
-    <select>
-        <option>Light</option>
-        <option>Moderate</option>
-        <option>High</option>
-    </select>
+    <p>
+        <label for="goal">Goal:</label><br>
+        <select id="goal">
+            <option value="">-- choose a goal --</option>
+            <option value="maintain">Maintain</option>
+            <option value="bulk">Bulk</option>
+            <option value="cut">Cut</option>
+        </select>
+    </p>
+
+    <p>
+        <span>Activity level:</span><br>
+        <label><input type="radio" name="activity" value="light"> Light</label><br>
+        <label><input type="radio" name="activity" value="moderate"> Moderate</label><br>
+        <label><input type="radio" name="activity" value="high"> High</label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" id="email-updates">
+            Email me weekly updates
+        </label>
+    </p>
+
+    <p>
+        <button type="submit">Create Plan</button>
+        <button type="reset">Reset</button>
+    </p>
+
 </form>
-<img src="fitnessgoals.webp" alt="Dumbells" width="400">
 
+<div id="message"></div>
+<div id="summary"></div>
+<img src="fitnessgoals.webp" alt="Dumbells" width="400">
+<script src="script.js"></script>
 </body>
 </html>
